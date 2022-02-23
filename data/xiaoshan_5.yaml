@@ -1,0 +1,12 @@
+# 测试给压板不同的编号，看它能否识别出外观相同的压板是压板1还是压板2,使用的数据集是xiaoshan_5,重新标记，把所有的第二个压板开关标记为yaban2
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../xiaoshan_5/images/train/  # 1758 images
+val: ../xiaoshan_5/images/val/  # 753 images
+
+# number of classes
+nc: 14
+# class names
+# 末尾增加两个类型：yaban2_duankai, yaban2_lianjie
+names: ['duandian_jiedi_heshang','duandian_kaiguan_fenzha','ercichatou_lianjie','yaban_duankai',
+        'yaban_lianjie','kaiguan_yuanfang','kaiguan_jiudi','kaiguan_fenzha','kaiguan_shiyan',
+        'jiedi_lakai','jiedi_duandian','duandian_jiedi_lakai','yaban2_duankai','yaban2_lianjie']
